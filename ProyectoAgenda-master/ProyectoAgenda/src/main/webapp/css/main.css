@@ -1,0 +1,131 @@
+.numero_empleado{
+    height:45px;
+    border-width: medium;
+    border-color: #21c2f8;
+    border-top-left-radius: 25px;
+    border: 6px outset #21c2f8;
+    
+  
+}
+
+.imagen_empleado {
+  
+    border: 6px outset #21c2f8;
+    height: 350px;
+    
+
+}
+
+.informacion_empresa {
+    height: 350px;
+    
+    border: 6px outset #21c2f8;
+    
+    border-bottom-left-radius: 25px;
+}
+
+.informacion_personal {
+    
+    
+    height:745px;
+    width:55%;
+    float:left;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+    border: 6px outset #21c2f8;
+    
+}
+
+.caja_izquierda {
+    float:left;
+    width:45%;
+    border-top-left-radius: 25px;
+    
+    
+    
+}
+
+.clearfix {
+    clear:both;
+    
+}
+
+.caja_izquierda {
+    align-content: center;
+}
+
+.ficha {
+    
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    
+   border-radius: 35px 35px 35px 35px;
+-moz-border-radius: 35px 35px 35px 35px;
+-webkit-border-radius: 35px 35px 35px 35px;
+border: 6px outset #21c2f8;
+    border-color:#21c2f8;
+    
+    
+    
+}
+
+.borde_ficha {
+    border: 7px;
+    border-style:solid; 
+    border-color:black;
+    border width:medium;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+         
+   border-radius: 35px 35px 35px 35px;
+-moz-border-radius: 35px 35px 35px 35px;
+-webkit-border-radius: 45px 45px 45px 45px;
+   
+}
+
+.texto_numero_empleado {
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.img_imagen_empleado {
+    width: 300px;
+    margin-top: 15px;
+    margin-left: 45px;
+}
+
+
+
+
+
+
+.texto_informacion_empresa {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    border-style: solid;
+    
+}
+
+.texto_informacion_personal {
+     font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    border: 43x;
+    border-style: solid;
+    border-top-right-radius: 18px;
+}
+
+.texto_adicional_informacion_personal {
+    font-size: 17px;
+    margin-left: 7px;
+}
+
+.texto_adicional_informacion_empresa {
+    
+    margin-left: 7px;
+}

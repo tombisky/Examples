@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 05-abr-2017 16:47:54 by Hibernate Tools 4.3.1.Final -->
+<hibernate-mapping>
+ <class catalog="agenda" name="com.lucatic.agenda.Empleado" table="empleados">
+  <id name="idempleados" type="java.lang.Integer">
+   <column name="idempleados"/>
+   <generator class="identity"/>
+  </id>
+  <many-to-one class="com.lucatic.agenda.Categorias" fetch="select" name="categorias">
+   <column name="idCategoria"/>
+  </many-to-one>
+  <many-to-one class="com.lucatic.agenda.Departamentos" fetch="select" name="departamentos">
+   <column name="idDepartamento"/>
+  </many-to-one>
+  <property generated="never" lazy="false" name="codEmpleado" type="string">
+   <column length="45" name="codEmpleado" not-null="true"/>
+  </property>
+  <property generated="never" lazy="false" name="salario" type="string">
+   <column length="45" name="salario"/>
+  </property>
+  <property generated="never" lazy="false" name="fechaAlta" type="timestamp">
+   <column length="19" name="fechaAlta"/>
+  </property>
+  <set fetch="select" inverse="true" lazy="true" name="personases"
+   sort="unsorted" table="personas">
+   <key>
+    <column name="idEmpleado"/>
+   </key>
+   <one-to-many class="com.lucatic.agenda.Personas"/>
+  </set>
+ </class>
+</hibernate-mapping>

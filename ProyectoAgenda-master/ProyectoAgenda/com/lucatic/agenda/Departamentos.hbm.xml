@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 05-abr-2017 16:47:54 by Hibernate Tools 4.3.1.Final -->
+<hibernate-mapping>
+ <class catalog="agenda" name="com.lucatic.agenda.Departamento" table="departamentos">
+  <id name="iddepartamento" type="java.lang.Integer">
+   <column name="iddepartamento"/>
+   <generator class="identity"/>
+  </id>
+  <property generated="never" lazy="false" name="nombre" type="string">
+   <column length="45" name="nombre" not-null="true"/>
+  </property>
+  <set fetch="select" inverse="true" lazy="true" name="empleadoses"
+   sort="unsorted" table="empleados">
+   <key>
+    <column name="idDepartamento"/>
+   </key>
+   <one-to-many class="com.lucatic.agenda.Empleados"/>
+  </set>
+ </class>
+</hibernate-mapping>

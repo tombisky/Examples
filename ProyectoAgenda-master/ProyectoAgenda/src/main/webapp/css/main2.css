@@ -1,0 +1,16 @@
+#form1{float: left;
+        width: 30%;}
+#form2{float: left;
+        width: 30%;
+margin-top: 22px;}
+#form3{clear: right;
+        width: 50%;
+margin-top: 20px}
+
+#boton{width: 100%;
+        background-color: #21c2f8;
+        border: solid;
+        color: white;
+        border-radius: 8px;
+        border-color: black;
+        border-width: 3px}

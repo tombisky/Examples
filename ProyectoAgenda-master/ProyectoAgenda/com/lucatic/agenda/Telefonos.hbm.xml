@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 05-abr-2017 16:47:54 by Hibernate Tools 4.3.1.Final -->
+<hibernate-mapping>
+ <class catalog="agenda" name="com.lucatic.agenda.Telefono" table="telefonos">
+  <id name="idtelefonos" type="java.lang.Integer">
+   <column name="idtelefonos"/>
+   <generator class="identity"/>
+  </id>
+  <many-to-one class="com.lucatic.agenda.Personas" fetch="select" name="personas">
+   <column name="idPersona"/>
+  </many-to-one>
+  <property generated="never" lazy="false" name="telefono" type="string">
+   <column length="45" name="telefono"/>
+  </property>
+ </class>
+</hibernate-mapping>
